@@ -1,0 +1,33 @@
+{
+  "name": "rodrigopedra/file-tagged-cache",
+  "description": "File Tagged Cache Driver for Laravel",
+  "keywords": [
+    "tagged cache",
+    "laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rodrigo Pedra Brum",
+      "email": "rodrigo.pedra@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "illuminate/cache": "^8.0",
+    "illuminate/support": "^8.0",
+    "illuminate/contracts": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RodrigoPedra\\FileTaggedCache\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RodrigoPedra\\FileTaggedCache\\FileTaggedCacheServiceProvider"
+      ]
+    }
+  }
+}
