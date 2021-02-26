@@ -226,8 +226,8 @@ The `TaggedCacheObserver` add listeners that will flush the cache items tagged b
 when model events that change content are dispatched.
 
 The `Comment` model does not use any of the helpers Observer, Contract, and Trait. But it is configured 
-to *"touch"* its parent `Post` model, to invalidate its parent `Post` related cached items and 
-a comment is changed.
+to *"touch"* its parent `Post` model, to invalidate its parent `Post` related cached items when 
+a comment is created or changed.
 
 If you are not familiar with how `$touch` works, take a look in the related Laravel documentation about it:
 
