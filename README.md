@@ -119,7 +119,7 @@ We could add the Observer and Trait to the models as such:
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use RodrigoPedra\FileTaggedCache\Model\CacheTaggable;
+use RodrigoPedra\FileTaggedCache\Contracts\CacheTaggable;
 use RodrigoPedra\FileTaggedCache\Model\HasCacheTag;
 use RodrigoPedra\FileTaggedCache\Model\TaggedCacheObserver;
 
@@ -147,7 +147,7 @@ class Post extends Model implements CacheTaggable
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use RodrigoPedra\FileTaggedCache\Model\CacheTaggable;
+use RodrigoPedra\FileTaggedCache\Contracts\CacheTaggable;
 use RodrigoPedra\FileTaggedCache\Model\HasCacheTag;
 use RodrigoPedra\FileTaggedCache\Model\TaggedCacheObserver;
 

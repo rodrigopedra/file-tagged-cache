@@ -4,6 +4,7 @@ namespace RodrigoPedra\FileTaggedCache\Model;
 
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Contracts\Cache\Repository;
+use RodrigoPedra\FileTaggedCache\Contracts\CacheTaggable;
 
 class TaggedCacheObserver
 {

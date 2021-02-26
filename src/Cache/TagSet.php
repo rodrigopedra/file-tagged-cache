@@ -4,7 +4,7 @@ namespace RodrigoPedra\FileTaggedCache\Cache;
 
 use Illuminate\Cache\TagSet as BaseTagSet;
 use Illuminate\Contracts\Cache\Store;
-use RodrigoPedra\FileTaggedCache\Model\CacheTaggable;
+use RodrigoPedra\FileTaggedCache\Contracts\CacheTaggable;
 
 /**
  * @property  \RodrigoPedra\FileTaggedCache\Cache\Store $store

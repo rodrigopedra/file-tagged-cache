@@ -1,6 +1,6 @@
 <?php
 
-namespace RodrigoPedra\FileTaggedCache\Model;
+namespace RodrigoPedra\FileTaggedCache\Contracts;
 
 interface CacheTaggable
 {
