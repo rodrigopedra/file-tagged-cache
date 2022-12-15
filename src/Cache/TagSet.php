@@ -14,7 +14,7 @@ class TagSet extends BaseTagSet
     public function __construct(Store $store, array $names = [])
     {
         $names = \array_map(function ($name) {
-            if (\is_object($name) && $name instanceof CacheTaggable) {
+            if ($name instanceof CacheTaggable) {
                 return $name->cacheTagKey();
             }
 
