@@ -10,7 +10,7 @@ class TaggedCacheObserver
 {
     protected Repository $cache;
 
-    public function __construct(Factory $cacheManager, string $store)
+    public function __construct(Factory $cacheManager, ?string $store = null)
     {
         $this->cache = $cacheManager->store($store);
     }
