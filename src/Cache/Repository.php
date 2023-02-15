@@ -16,7 +16,7 @@ class Repository extends TaggedCache
         parent::__construct($store, $tags);
     }
 
-    protected function event($event)
+    protected function event($event): void
     {
         if ($event instanceof KeyWritten) {
             $this->store->persistTagRelatedKeys($event->key, $event->tags);

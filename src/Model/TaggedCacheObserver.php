@@ -15,27 +15,27 @@ class TaggedCacheObserver
         $this->cache = $cacheManager->store($store);
     }
 
-    public function created(CacheTaggable $model)
+    public function created(CacheTaggable $model): void
     {
         $this->cache->tags([$model])->flush();
     }
 
-    public function updated(CacheTaggable $model)
+    public function updated(CacheTaggable $model): void
     {
         $this->cache->tags([$model])->flush();
     }
 
-    public function deleted(CacheTaggable $model)
+    public function deleted(CacheTaggable $model): void
     {
         $this->cache->tags([$model])->flush();
     }
 
-    public function restored(CacheTaggable $model)
+    public function restored(CacheTaggable $model): void
     {
         $this->cache->tags([$model])->flush();
     }
 
-    public function forceDeleted(CacheTaggable $model)
+    public function forceDeleted(CacheTaggable $model): void
     {
         $this->cache->tags([$model])->flush();
     }
